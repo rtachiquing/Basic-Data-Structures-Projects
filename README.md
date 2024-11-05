@@ -52,4 +52,19 @@ The developer need to make a beautiful and practical user interface capable of s
     * Maps/Dictionarys: To organize detailed information about each book and user. 
     * Linked Lists: To manage records of loans and each user's history.
 
-    
+
+| Criterio | Descripción | Puntos |
+|---|---|---|
+| Implementación Correcta de Estructuras de Datos | Evaluación del uso correcto de listas, pilas, colas, etc. | 40 |
+| - Uso adecuado de las estructuras |  | 30 |
+| - Innovación o complejidad añadida | Combinaciones creativas | 10 |
+| Funcionalidad y Comportamiento de la Interfaz |  | 30 |
+| - Claridad en visualización de estado | Reflejo claro de cada operación o cambio en la estructura | 20 |
+| - Feedback visual inmediato | Reflejar cambios de manera visual y clara | 10 |
+| Facilidad de Uso e Intuitividad de la Interfaz |  | 15 |
+| - Navegación sencilla | Distribución y ubicación lógica de los elementos | 10 |
+| - Funcionalidades intuitivas | El flujo y los pasos son comprensibles sin demasiada explicación | 5 |
+| Creatividad y Originalidad |  | 10 |
+| - Ideas innovadoras en interfaz o lógica | Integración de más ideas e implementaciones de las meramente mencionadas en la base del proyecto. Novedades o adaptaciones que mejoren la experiencia. Ajustes estéticos o de personalización que hagan atractiva la interfaz | 10 |
+| Documentación |  | 5 |
+| - Presentación y Readme | Presentación muy clara sobre los niveles de implementación del código en sí. Archivos Readme no copy/paste del script o archivo contenido. | 5 |
