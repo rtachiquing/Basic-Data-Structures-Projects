@@ -64,7 +64,7 @@ The developer need to make a beautiful and practical user interface capable of s
 | **Ease of Use and Interface Intuitiveness** |  | **15** |
 | - Simple navigation | Logical distribution and location of elements | 10 |
 | - Intuitive functionalities | Flow and steps are understandable without too much explanation | 5 |
-| **Creativity and Originality** |  | **10** |
+| **Creativity and Originality** |   | **10** |
 | - Innovative ideas in interface or logic | Integration of more ideas and implementations than those merely mentioned in the project's base. Novelties or adaptations that improve the experience. Aesthetic or personalization adjustments that make the interface attractive | 10 |
 | **Documentation** |  | **5** |
 | - Presentation and Readme | Very clear presentation of the levels of code implementation itself. Readme files that are not copy/paste of the script or contained file. | 5 |
