@@ -55,7 +55,7 @@ The developer need to make a beautiful and practical user interface capable of s
 
 | Criteria | Description | Points |
 |---|---|---|
-| **Correct Implementation of Data Structures** | **Evaluation of the correct use of lists, stacks, queues, etc.** | **40** |
+| **Correct Implementation of Data Structures** | **Evaluation of the correct use of lists, stacks, queues, etc. -->** | **40** |
 | - Proper use of structures |  | 30 |
 | - Added innovation or complexity | Creative combinations | 10 |
 | **Interface Functionality and Behavior** | **-->** | **30** |
