@@ -1,7 +1,9 @@
 # Basic-Data-Structures-Projects
 These are projects to practice the implementation of some basic data structures, such: Linked Lists, Stacks, Queues and Heaps, Sets, Maps, Hash Tables, and some String Algorithms.
 
-The ide is the development of intutive user interfaces and easy management.
+The idea is the development of intutive user interfaces and their easy management.
+
+** User interfaces should be very intuitive and should constantly demonstrate the use of data structures as the user navigates the system. **
 
 ## 1.- Social Net System: Core sections could be: 
   *	Users Management
