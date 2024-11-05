@@ -6,7 +6,9 @@ The idea is the development of intutive user interfaces and their easy managemen
 **User interfaces should be very intuitive and should constantly demonstrate the use of data structures as the user navigates the system.**
 
 In this repository you will find 3 possible projects. 
-The files contains a brief explanation in spanish and they are only showing some idea about what of the contains are expected. Obviously, they are just a mere so basic example. The developer need to make a beautiful and practical user interface capacble of showing how the datastructures are helping in the management of the system.
+The files contains a brief explanation in spanish and they are only showing some idea about what of the contains are expected. 
+Obviously, they are just a mere so basic example. 
+The developer need to make a beautiful and practical user interface capable of showing how the data structures are helping in the management of the system.
 
 ## 1.- Social Net System: Core sections could be: 
   *	Users Management
