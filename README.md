@@ -1,7 +1,7 @@
 # Basic-Data-Structures-Projects
-These are projects to practice the implementation of some basic data structures, such: Linked Lists, Stacks, Queues and Heaps, Sets, Maps, Hash Tables, and some String Algorithms.
+These are projects to practice the implementation of some basic data structures, such as: Linked Lists, Stacks, Queues and Heaps, Sets, Maps, Hash Tables, and some String Algorithms.
 
-The idea is the development of intutive user interfaces and their easy management.
+The idea is the development of intuitive user interfaces and their easy management.
 
 **User interfaces should be very intuitive and should constantly demonstrate the use of data structures as the user navigates the system.**
 
