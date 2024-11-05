@@ -1,0 +1,207 @@
+*** Sistema de Red Social ***
+
+En el sistema de red social, las secciones principales podrían ser: 
+•	Gestión de Usuarios, Publicaciones, Comentarios y Me Gusta, y Amistades. 
+
+Objetivos Principales:
+•	Implementción y manejo de la implementación de la mayor parte de estrucutras de datos
+  y algoritmos vistos durante el curso.
+•	Creación de una interfaz intuitiva y de fácil manejo.
+
+Resumen de Estructuras de Datos Integradas
+•	Colas Normales: Para las notificaciones de actividad.
+•	Colas de Prioridad: Para resaltar las publicaciones más relevantes.
+•	Algoritmos sobre Cadenas: Para la búsqueda eficiente de usuarios y publicaciones.
+•	Conjuntos: Para manejar los "me gusta" y la lista de amigos.
+•	Mapas: Para organizar la información de cada usuario.
+•	Listas: Para almacenar publicaciones de usuarios.
+
+A continuación, se presentan los frames para cada sección.
+
+Pantalla Principal - Menú de Inicio
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     SISTEMA DE RED SOCIAL                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│   Seleccione una opción del menú para continuar:                           │
+│                                                                            │
+│       1. Gestión de Usuarios                                               │
+│       2. Publicaciones                                                     │
+│       3. Comentarios y Me Gusta                                            │
+│       4. Amistades                                                         │
+│       5. Reportes                                                          │
+│       6. Salir                                                             │
+│                                                                            │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Salir │
+└────────────────────────────────────────────────────────────────────────────┘
+
+Gestión de Usuarios: Se utilizarán Mapas para almacenar la información de los 
+                     usuarios y su estado de conexión.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         GESTIÓN DE USUARIOS                                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   1. Registrar nuevo usuario                                                │
+│   2. Buscar usuario (por nombre o ID)                                       │
+│   3. Eliminar usuario                                                       │  
+│   4. Listar todos los usuarios                                              │
+│                                                                             │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Mapa de Usuarios ]                                               │   │
+│   │     Usuario ID: 001                                                 │   │
+│   │     Nombre: "Ana Martínez"                                          │   │
+│   │     Estado: "Conectado"                                             │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Publicaciones: Para las publicaciones, utilizaremos una Lista que permitirá mostrar
+               todas las publicaciones de los usuarios.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              PUBLICACIONES                                  │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   1. Crear nueva publicación                                                │
+│   2. Ver todas las publicaciones                                            │
+│   3. Buscar publicaciones por usuario                                       │
+│                                                                             │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Lista de Publicaciones ]                                         │   │
+│   │     - "Hola a todos, ¿cómo están?" - Ana Martínez                   │   │
+│   │     - "Aprendiendo sobre Estructuras de Datos." - Luis García       │   │
+│   │                                                                     │   │
+│   │  [ Almacena publicaciones en una Lista para fácil acceso ]          │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Comentarios y Me Gusta: En esta sección, se implementarán Conjuntos para almacenar 
+                        los "Me Gusta" de cada publicación y asegurar que un usuario 
+                        solo puede darle "Me Gusta" una vez.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         COMENTARIOS Y ME GUSTA                              │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   1. Comentar en una publicación                                            │
+│   2. Dar "Me Gusta" a una publicación                                       │
+│   3. Ver comentarios de una publicación                                     │
+│                                                                             │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Conjunto de Me Gusta ]                                           │   │
+│   │     Publicación: "Hola a todos, ¿cómo están?" - Me Gusta por: {     │   │
+│   │                                             "Usuario1", "Usuario2"} │   │
+│   │                                                                     │   │
+│   │  [ Almacena "Me Gusta" usando un Conjunto para evitar duplicados ]  │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Amistades: Para la gestión de amistades, se utilizarán Conjuntos para representar 
+           las relaciones de amistad entre los usuarios.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                AMISTADES                                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   1. Agregar amigo                                                          │
+│   2. Eliminar amigo                                                         │
+│   3. Ver amigos                                                             │
+│                                                                             │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Conjunto de Amigos ]                                             │   │
+│   │     Usuario: "Ana Martínez" - Amigos: {"Luis García",               │   │
+│   │                                        "Pedro Sánchez"}             │   │
+│   │                                                                     │   │
+│   │  [ Uso de Conjuntos para gestionar amistades de manera eficiente ]  │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Notificaciones de Actividad (Normal Queue): Se debería poder ir vaciando cada notificación via un comando
+                                            que simplemente diga "leer" y al ser "leído" se desencola uno a uno.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        NOTIFICACIONES DE ACTIVIDAD                          │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   - Ana Martínez te ha enviado una solicitud de amistad.                    │
+│   - Pedro Sánchez ha dado "Me Gusta" a tu publicación: "Hola a todos".      │
+│   - María López comentó en tu publicación: "Aprendiendo sobre Estructuras   │
+│                                             de Datos".                      │
+│                                                                             │
+│   [ Las notificaciones se gestionan en una Cola Normal ]                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Publicaciones Destacadas (Priority Queue-Heap): Basta con que muestre a lo más 10.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      PUBLICACIONES DESTACADAS                               │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  - "¡Nuevo curso de Python avanzado!" - Publicación de Luis García          │
+│                                         (Me gusta: 45)                      │
+│  - "Aprendiendo sobre Estructuras de Datos" - Ana Martínez (Me gusta: 32)   │
+│  - "Mis reflexiones sobre el desarrollo web" - Pedro Sánchez (Me gusta: 29) │
+│                                                                             │
+│ [ Uso de Cola de Prioridad para ordenar las publicaciones según relevancia ]│
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Búsqueda de Usuarios o Publicaciones (Algoritmos sobre Cadenas)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                BÚSQUEDA DE USUARIOS / PUBLICACIONES                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│  Buscar: "Estructuras de Datos"                                             │
+│                                                                             │
+│ Resultados:                                                                 │
+│ - Publicación: "Aprendiendo sobre Estructuras de Datos" - Ana Martínez      │
+│ - Usuario: Luis García - Publicaciones relacionadas: "Curso de Python       │
+│                                                       avanzado"             │
+│                                                                             │
+│ [ Algs. sobre cadenas aplicados para filtrar los resultados de búsqueda ]   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Exploración de Usuario y Amigos (Ventanas Emergentes y Overviews): Cuando el usuario busca a una persona,
+                    aparecerá una ventana emergente con los detalles de la persona. Desde esta ventana,
+                    podrá ver un resumen de los amigos del usuario explorado, sin profundizar demasiado, 
+                    esto es poder explorar solo un "eslavón" en la "cadena de amigos", esto para no caer
+                    en una profunda recursividad.
+
+•	Frame de Exploración de Usuario y Overview de Amigos.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      PERFIL DE USUARIO                                      │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   Nombre: Ana Martínez                                                      │
+│   Alias: @AnaM                                                              │
+│   Estado: "Conectado"                                                       │
+│   Amigos: 5                                                                 │
+│                                                                             │
+│   Publicaciones:                                                            │
+│   - "Hola a todos, ¿cómo están?"                                            │
+│   - "Aprendiendo sobre Estructuras de Datos"                                │
+│                                                                             │
+│   Opciones:                                                                 │
+│   [1] Ver Amigos  [2] Ver Publicaciones  [3] Enviar Mensaje                 │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+•	Frame Emergente para Exploración de Amigos del Usuario (Solo Overview):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          AMIGOS DE ANA MARTÍNEZ                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   - Luis García (@LuisG) - Estado: Conectado                                │
+│   - Pedro Sánchez (@PedroS) - Estado: Desconectado                          │
+│   - María López (@MariaL) - Estado: Conectado                               │
+│                                                                             │
+│   [ Se muestra un overview de los amigos del usuario seleccionado ]         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Algunas otras consideraciones:
+• Al ejecutar el programa, antes de iniciar la interacción con el usuario o administrador,
+  el programa debe construir una red social de mínimo 20 usuarios y, que a su vez, ya deben
+  tener contenido las publicaciones, "me gusta", etc (estructuras de datos ya con contenido).
+• El desarrollador decide si solo controla la plataforma como administrador o bien con una opción alternativa
+  de "entrar o activar modo usuario".

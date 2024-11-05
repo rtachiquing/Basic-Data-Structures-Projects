@@ -1,0 +1,166 @@
+*** Sistema de Gestión de Biblioteca Digital ***
+En este sistema, las secciones principales pueden ser: Gestión de Libros, 
+Gestión de Usuarios, Préstamos y Devoluciones, y Consultas de Búsqueda. 
+
+La configuración incluirá estructuras de datos para organizar el inventario de libros, 
+gestionar préstamos, realizar búsquedas eficientes y enviar notificaciones a los usuarios.
+El sistema también permitirá a los administradores y usuarios realizar un seguimiento de sus 
+actividades en la biblioteca.
+
+Objetivos Principales:
+• Implementar estructuras de datos que faciliten la gestión de inventario de libros, préstamos, y usuarios.
+• Crear una interfaz organizada y fácil de usar para manejar el catálogo, consultas de disponibilidad y notificaciones de estado.
+
+Resumen de Estructuras de Datos Integradas:
+• Colas Normales: Para gestionar notificaciones de usuarios sobre reservas, vencimientos y disponibilidad de libros.
+• Colas de Prioridad: Para priorizar libros según la popularidad (número de reservas) y solicitudes.
+• Algoritmos sobre Cadenas: Para búsquedas eficientes de libros por título, autor o palabras clave.
+• Conjuntos: Para manejar categorías y géneros de libros.
+• Mapas: Para almacenar información detallada sobre cada libro y usuario.
+• Listas: Para gestionar los registros de préstamos y el historial de cada usuario.
+
+
+Secciones principales:
+
+Pantalla Principal - Menú de Inicio
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     SISTEMA DE GESTIÓN DE BIBLIOTECA DIGITAL               │
+├────────────────────────────────────────────────────────────────────────────┤
+│   Seleccione una opción del menú para continuar:                           │
+│                                                                            │
+│       1. Gestión de Libros                                                 │
+│       2. Gestión de Usuarios                                               │
+│       3. Préstamos                                                         │
+│       4. Historial de Usuarios                                             │
+│       5. Notificaciones                                                    │
+│       6. Salir                                                             │
+│                                                                            │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Salir │
+└────────────────────────────────────────────────────────────────────────────┘
+
+Gestión de Libros: Utilizaremos Mapas para almacenar la información de cada libro, 
+                   incluyendo su disponibilidad. (Mapa de ibros)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                            GESTIÓN DE LIBROS                               │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Registrar nuevo libro                                                 │
+│   2. Buscar libro (por título, autor o palabra clave)                      │
+│   3. Eliminar libro                                                        │
+│   4. Listar todos los libros                                               │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Mapa de Libros ]                                                │   │
+│   │     ID del Libro: 1001                                             │   │
+│   │     Título: "Introducción a Algoritmos"                            │   │
+│   │     Autor: "Thomas H. Cormen"                                      │   │
+│   │     Géneros: {Computación, Matemáticas}                            │   │
+│   │     Disponibilidad: "Disponible"                                   │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+
+Gestión de Usuarios: En esta sección, se utilizarán Conjuntos para manejar los 
+                     usuarios y sus préstamos, evitando duplicados.
+                     (Mapa de Usuarios y Conjuntos de Géneros Preferidos)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                            GESTIÓN DE USUARIOS                             │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Registrar nuevo usuario                                               │
+│   2. Buscar usuario (por nombre o ID)                                      │
+│   3. Eliminar usuario                                                      │
+│   4. Listar todos los usuarios                                             │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Mapa de Usuarios ]                                              │   │
+│   │     ID del Usuario: U-001                                          │   │
+│   │     Nombre: "Ana López"                                            │   │
+│   │     Libros Actuales: {1001, 1004}                                  │   │
+│   │     Géneros Preferidos: {Ciencia Ficción, Filosofía}               │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+
+Préstamos y Devoluciones: Aquí se utilizará una Cola para manejar el proceso de 
+                          préstamos y devoluciones de libros.
+                          (Lista de Préstamos y Cola de Prioridad para Reservas)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     PRÉSTAMOS Y DEVOLUCIONES                               │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Registrar nuevo préstamo                                              │
+│   2. Ver lista de préstamos activos                                        │
+│   3. Gestionar reservas de libros                                          │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Lista de Préstamos Activos ]                                    │   │
+│   │     Libro: "Introducción a Algoritmos" - Usuario: Ana López        │   │
+│   │     Fecha de Préstamo: 15/10/2024                                  │   │
+│   │     Fecha de Devolución: 15/11/2024                                │   │
+│   │                                                                    │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Cola de Prioridad - Reservas ]                                  │   │
+│   │     1. Usuario: Carlos Rivera - Libro: "Introducción a Algoritmos" │   │
+│   │     2. Usuario: Laura Gómez - Libro: "Filosofía Moderna"           │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Historial de Usuarios (Listas de Historial de Préstamos)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                             HISTORIAL DE USUARIOS                          │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Ver historial de un usuario                                           │
+│   2. Agregar nueva actividad al historial                                  │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Historial de Usuario - Ana López ]                              │   │
+│   │     - Préstamo: "Introducción a Algoritmos" - 15/10/2024           │   │
+│   │     - Devolución: 15/11/2024                                       │   │
+│   │     - Préstamo: "Filosofía Moderna" - 01/09/2024                   │   │
+│   │                                                                    │   │
+│   │  [ Almacenado en una Lista de actividades del usuario ]            │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Notificaciones de Actividad (Cola Normal)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                          NOTIFICACIONES DE ACTIVIDAD                       │
+├────────────────────────────────────────────────────────────────────────────┤
+│   - Libro "Introducción a Algoritmos" reservado - Notificar a Carlos      │
+│   - Recordatorio de devolución para "Ana López" - 14/11/2024              │
+│   - "Filosofía Moderna" disponible nuevamente                             │
+│                                                                            │
+│ [ Cola de notificaciones para seguir la actividad de la biblioteca ]       │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Búsqueda de Libros (Algoritmos sobre Cadenas): Consultas de Búsqueda Se implementará 
+                      una búsqueda eficiente utilizando Algoritmos de Cadenas para filtrar 
+                      resultados de búsqueda.
+┌────────────────────────────────────────────────────────────────────────────┐
+│                        BÚSQUEDA DE LIBROS / USUARIOS                       │
+├────────────────────────────────────────────────────────────────────────────┤
+│  Buscar: "Algoritmos"                                                      │
+│                                                                            │
+│ Resultados:                                                                │
+│ - Libro: "Introducción a Algoritmos" - Autor: Thomas H. Cormen             │
+│ - Libro: "Algoritmos en Python" - Autor: Jon Bentley                       │
+│                                                                            │
+│ [ Algoritmos sobre cadenas para búsqueda de libros y autores ]             │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Algunas otras consideraciones:
+• Proposiciones adicionales de los alumnos: ___por llenar___
+

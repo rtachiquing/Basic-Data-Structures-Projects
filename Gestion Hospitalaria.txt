@@ -1,0 +1,188 @@
+*** Sistema de Gestión Hospitalaria ***
+
+Objetivos Principales:
+•	Implementación de estructuras de datos para gestionar la información de pacientes y médicos.
+•	Crear una interfaz de administración con opciones intuitivas.
+
+Resumen de Estructuras de Datos Integradas:
+•	Colas Normales: Para organizar notificaciones de nuevas citas, resultados de análisis, y recordatorios.
+•	Colas de Prioridad: Para priorizar pacientes según la gravedad de su condición.
+•	Algoritmos sobre Cadenas: Para búsquedas eficientes de pacientes o médicos por nombre, ID o síntomas clave.
+•	Conjuntos: Para manejar especialidades médicas y alergias de pacientes.
+•	Mapas: Para almacenar información detallada de cada paciente y médico.
+•	Listas: Para registrar tratamientos, consultas y resultados médicos en el historial de cada paciente.
+
+
+Secciones principales: Gestión de Pacientes, Gestión de Citas y Gestión de Personal Médico.
+
+Menú Inicio:
+┌────────────────────────────────────────────────────────────────────────────┐
+│                     SISTEMA DE GESTIÓN HOSPITALARIA                        │
+├────────────────────────────────────────────────────────────────────────────┤
+│   Seleccione una opción del menú para continuar:                           │
+│                                                                            │
+│       1. Gestión de Pacientes                                              │
+│       2. Gestión de Médicos                                                │
+│       3. Citas Médicas                                                     │
+│       4. Historial Médico                                                  │
+│       5. Notificaciones                                                    │
+│       6. Salir                                                             │
+│                                                                            │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Salir │
+└────────────────────────────────────────────────────────────────────────────┘
+
+Gestión de Pacientes: Este frame permite gestionar los datos y el historial de 
+                      cada paciente, haciendo uso de Mapas para organizar datos 
+                      de cada paciente. (Mapa de Pacientes)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                            GESTIÓN DE PACIENTES                            │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Registrar nuevo paciente                                              │
+│   2. Buscar paciente (por nombre o ID)                                     │
+│   3. Eliminar paciente                                                     │
+│   4. Listar todos los pacientes                                            │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Mapa de Pacientes ]                                             │   │
+│   │     Paciente ID: 001                                               │   │
+│   │     Nombre: "Laura González"                                       │   │
+│   │     Edad: 32                                                       │   │
+│   │     Alergias: {Penicilina, Polvo}                                  │   │
+│   │     Estado: "Activo"                                               │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Gestión de Médicos: (Mapa de Médicos y Conjuntos de Especialidades) 
+                    Aquí se utilizan Conjuntos para almacenar información sobre 
+                    los médicos disponibles, sus especialidades y horarios, 
+                    evitando datos duplicados.
+┌────────────────────────────────────────────────────────────────────────────┐
+│                            GESTIÓN DE MÉDICOS                              │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Registrar nuevo médico (Asignar horario de trabajo, etc)              │
+│   2. Buscar médico (por nombre o ID)                                       │
+│   3. Eliminar médico                                                       │
+│   4. Listar todos los médicos                                              │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Mapa de Médicos ]                                               │   │
+│   │     Médico ID: M-001                                               │   │
+│   │     Nombre: "Dr. Juan Pérez"                                       │   │
+│   │     Especialidad: Cardiología                                      │   │
+│   │     Pacientes Activos: {001, 002, 004}                             │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Conjuntos - Especialidades Médicas ]                            │   │
+│   │     Especialidades Disponibles: Cardiología, Neurología, Pediatría │   │
+│   │     Especialistas Cardiología: Dr. A, Dr. B                        │   │
+│   │     Especialistas Neurología: Dr. C                                │   │
+│   │                                                                    │   │
+│   │  [ Uso de Conjuntos para evitar duplicados en listas de            │   │
+│   │    especialidades y médicos ]                                      │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Gestión de Citas: Aquí se utiliza una Cola de Prioridad para organizar a los 
+                  pacientes según la gravedad de su condición o la urgencia de 
+                  su cita. (Colas de Prioridad para Pacientes Urgentes)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                               CITAS MÉDICAS                                │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Programar nueva cita                                                  │
+│   2. Ver lista de citas (Cancelas / Modificar Citas)                       │
+│   3. Priorizar pacientes urgentes                                          │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Cola de Prioridad - Citas Urgentes ]                            │   │
+│   │     1. Laura González - Prioridad: Alta (Enfermedad grave)         │   │
+│   │     2. José Ramírez - Prioridad: Media  (Visita de Control         │   │
+│   │     3. Clara Gómez - Prioridad: Baja  (Visita Normal)              │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Historial Médico: (Listas para Consultas y Resultados)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                             HISTORIAL MÉDICO                               │
+├────────────────────────────────────────────────────────────────────────────┤
+│   1. Ver historial de un paciente                                          │
+│   2. Agregar nuevo registro médico                                         │
+│                                                                            │
+│   ┌────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Historial de Paciente - Laura González ]                        │   │
+│   │     - Consulta: 20/10/2024 - Cardiología                           │   │
+│   │     - Resultado: Análisis de Sangre (Normales)                     │   │
+│   │     - Tratamiento Actual: Antihipertensivos                        │   │
+│   │                                                                    │   │
+│   │  [ Almacenado en una Lista de registros médicos ]                  │   │
+│   └────────────────────────────────────────────────────────────────────┘   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+Consultas e Historial de Pacientes:  Usamos Deques para llevar el historial de visitas 
+                                     y tratamientos recientes, permitiendo acceder a los
+                                     registros en orden cronológico.
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                   CONSULTAS E HISTORIAL DE PACIENTES                        │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│   Paciente ID: 12345   | Nombre: Juan Pérez                                 │
+│                                                                             │
+│   Historial de Visitas (últimas primero):                                   │
+│                                                                             │
+│   ┌─────────────────────────────────────────────────────────────────────┐   │
+│   │  [ Deque - Historial ]                                              │   │
+│   │     Última Visita: 2024-10-30 - Diagnóstico: Check-up regular       │   │
+│   │     Visita Previa: 2024-09-15 - Diagnóstico: Diabetes controlado    │   │
+│   │     Visita Previa: 2024-08-05 - Diagnóstico: Hipertensión controlado│   │
+│   │                                                                     │   │
+│   │  [ Deque permite fácil acceso a registros recientes de un           │   │
+│   │    paciente en orden ]                                              │   │
+│   └─────────────────────────────────────────────────────────────────────┘   │
+├─────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Notificaciones de Actividad: (Cola Normal)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                          NOTIFICACIONES DE ACTIVIDAD                       │
+├────────────────────────────────────────────────────────────────────────────┤
+│   - Nueva cita programada para Laura González - 21/10/2024                 │
+│   - Resultado de análisis disponible para José Ramírez                     │
+│   - Recordatorio: Consulta con Dr. Juan Pérez - 22/10/2024                 │
+│                                                                            │
+│ [ Cola de notificaciones para seguir la actividad médica ]                 │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Búsqueda de Pacientes o Médicos: (Algoritmos sobre Cadenas)
+┌────────────────────────────────────────────────────────────────────────────┐
+│                       BÚSQUEDA DE PACIENTES / MÉDICOS                      │
+├────────────────────────────────────────────────────────────────────────────┤
+│  Buscar: "Hipertensión"                                                    │
+│                                                                            │
+│ Resultados:                                                                │
+│ - Paciente: Laura González - Consulta: "Hipertensión"                      │
+│ - Médico: Dr. Juan Pérez - Especialidad: Cardiología                       │
+│                                                                            │
+│ [ Algoritmos sobre cadenas para búsqueda de registros y especialidades ]   │
+├────────────────────────────────────────────────────────────────────────────┤
+│ Comandos: [Flechas Arriba/Abajo] Navegar  [Enter] Seleccionar  [Esc] Volver│
+└────────────────────────────────────────────────────────────────────────────┘
+
+Simulación: * Generar una lista automática inicial de 20 pacientes, 10 doctores, etc. 
+            * Construcción de archivos ".txt" que contengan todo el historial de
+              la información con la que trabaja el hospital. Poder salvar la información,
+	      según lo que se desee en estos archivos.
+
+Adicionales: De la generación de archivos ".txt" implmentar usos de los algoritmos sobre cadenas
+
+Algunas otras consideraciones:
+• Proposiciones adicionales de los alumnos: ___por llenar___
