@@ -53,18 +53,18 @@ The developer need to make a beautiful and practical user interface capable of s
     * Linked Lists: To manage records of loans and each user's history.
 
 
-| Criterio | Descripción | Puntos |
+| Criteria | Description | Points |
 |---|---|---|
-| Implementación Correcta de Estructuras de Datos | Evaluación del uso correcto de listas, pilas, colas, etc. | 40 |
-| - Uso adecuado de las estructuras |  | 30 |
-| - Innovación o complejidad añadida | Combinaciones creativas | 10 |
-| Funcionalidad y Comportamiento de la Interfaz |  | 30 |
-| - Claridad en visualización de estado | Reflejo claro de cada operación o cambio en la estructura | 20 |
-| - Feedback visual inmediato | Reflejar cambios de manera visual y clara | 10 |
-| Facilidad de Uso e Intuitividad de la Interfaz |  | 15 |
-| - Navegación sencilla | Distribución y ubicación lógica de los elementos | 10 |
-| - Funcionalidades intuitivas | El flujo y los pasos son comprensibles sin demasiada explicación | 5 |
-| Creatividad y Originalidad |  | 10 |
-| - Ideas innovadoras en interfaz o lógica | Integración de más ideas e implementaciones de las meramente mencionadas en la base del proyecto. Novedades o adaptaciones que mejoren la experiencia. Ajustes estéticos o de personalización que hagan atractiva la interfaz | 10 |
-| Documentación |  | 5 |
-| - Presentación y Readme | Presentación muy clara sobre los niveles de implementación del código en sí. Archivos Readme no copy/paste del script o archivo contenido. | 5 |
+| Correct Implementation of Data Structures | Evaluation of the correct use of lists, stacks, queues, etc. | 40 |
+| - Proper use of structures |  | 30 |
+| - Added innovation or complexity | Creative combinations | 10 |
+| Interface Functionality and Behavior |  | 30 |
+| - Clarity in state visualization | Clear reflection of each operation or change in the structure | 20 |
+| - Immediate visual feedback | Reflect changes visually and clearly | 10 |
+| Ease of Use and Interface Intuitiveness |  | 15 |
+| - Simple navigation | Logical distribution and location of elements | 10 |
+| - Intuitive functionalities | Flow and steps are understandable without too much explanation | 5 |
+| Creativity and Originality |  | 10 |
+| - Innovative ideas in interface or logic | Integration of more ideas and implementations than those merely mentioned in the project's base. Novelties or adaptations that improve the experience. Aesthetic or personalization adjustments that make the interface attractive | 10 |
+| Documentation |  | 5 |
+| - Presentation and Readme | Very clear presentation of the levels of code implementation itself. Readme files that are not copy/paste of the script or contained file. | 5 |
