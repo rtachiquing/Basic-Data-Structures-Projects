@@ -58,13 +58,13 @@ The developer need to make a beautiful and practical user interface capable of s
 | **Correct Implementation of Data Structures** | **Evaluation of the correct use of lists, stacks, queues, etc.** | **40** |
 | - Proper use of structures |  | 30 |
 | - Added innovation or complexity | Creative combinations | 10 |
-| **Interface Functionality and Behavior** |  | **30** |
+| **Interface Functionality and Behavior** :---:  | **30** |
 | - Clarity in state visualization | Clear reflection of each operation or change in the structure | 20 |
 | - Immediate visual feedback | Reflect changes visually and clearly | 10 |
-| **Ease of Use and Interface Intuitiveness** |  | **15** |
+| **Ease of Use and Interface Intuitiveness** :---:  | **15** |
 | - Simple navigation | Logical distribution and location of elements | 10 |
 | - Intuitive functionalities | Flow and steps are understandable without too much explanation | 5 |
-| **Creativity and Originality** |   | **10** |
+| **Creativity and Originality** :---:   | **10** |
 | - Innovative ideas in interface or logic | Integration of more ideas and implementations than those merely mentioned in the project's base. Novelties or adaptations that improve the experience. Aesthetic or personalization adjustments that make the interface attractive | 10 |
-| **Documentation** |  | **5** |
+| **Documentation** :---:  | **5** |
 | - Presentation and Readme | Very clear presentation of the levels of code implementation itself. Readme files that are not copy/paste of the script or contained file. | 5 |
