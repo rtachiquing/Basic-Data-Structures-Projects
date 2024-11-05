@@ -4,10 +4,10 @@ These are projects to practice the implementation of some basic data structures,
 The ide is the development of intutive user interfaces and easy management.
 
 ## 1.- Social Net System: Core sections could be: 
-  •	Users Management
-  •	Posts (Publications)
-  •	Comments and Likes
-  •	Friends (Particular Net). 
+  *	Users Management
+  *	Posts (Publications)
+  *	Comments and Likes
+  *	Friends (Particular Net). 
 
   ### Summary of Integrated Data Structures:
     •	Queues: Activity notifications.
